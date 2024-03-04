@@ -501,8 +501,8 @@ async def play_commnd(
                     caption=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
-                await asyncio.sleep(5)
-                await message.delete()
+                # await asyncio.sleep(5)
+                # await message.delete()
                 return await play_logs(
                     message, streamtype=f"URL Searched Inline"
                 )
